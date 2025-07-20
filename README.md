@@ -1,16 +1,21 @@
-# QRPayTON Bot
+# 🤖 QR PayTON Bot
 
-A Telegram bot to generate TON payment QR codes.
+A Telegram bot to generate TON payment QR codes in USD using the `/pay` command.
 
-## Features
-- Generate TON payment QR by amount
-- Convert BRL → TON and create payment links
+---
 
-## Usage
-- `/start` — Welcome message
-- `/create` — Input TON amount and get QR
-- `/pay 10` — Pay R$10 in TON (QR + link)
+## 🚀 Features
 
-## Setup
-1. `npm install`
-2. Create `.env` file with:
+- `/start`: Greet the user and explain how to use the bot.
+- `/pay <amount> USD`: Converts the specified USD amount to TON, and returns a payment QR code.
+
+---
+
+## ⚙️ Environment Variables
+
+Create a `.env` file in the root of your project with the following:
+
+```env
+BOT_TOKEN=your_telegram_bot_token
+TON_RECIPIENT_ADDRESS=your_ton_wallet_address
+PORT=3000
